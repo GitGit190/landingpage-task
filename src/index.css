@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: Inter, Arial, sans-serif;
+  --font-montserrat: Montserrat, Arial, sans-serif;
+  --color-ink: #212529;
+  --color-navy: #043873;
+  --color-sky: #4f9cf9;
+  --color-ice: #c4defd;
+  --color-gold: #ffe492;
+}
+
+@layer base {
+  body {
+    @apply bg-white font-sans text-lg leading-[30px] tracking-[-0.36px] text-ink;
+  }
+}
+
+@layer utilities {
+  .only-lg {
+    @apply max-lg:hidden xl:hidden max-md:block;
+  }
+}
+
+@layer components {
+  .heading-to-subtext-spacing {
+    @apply space-y-6 items-center lg:items-start flex flex-col;
+  }
+  .text-and-image-container{
+    @apply flex flex-col items-center lg:flex-row gap-15 lg:items-center 2xl:gap-24;
+  }
+  .text-container {
+    @apply flex flex-col items-center lg:items-start lg:text-start gap-15 z-1;
+  }
+  .section-pad {
+    @apply px-4 py-20 overflow-hidden md:px-[20px] md:py-[100px] lg:px-[32px] lg:py-[140px] 2xl:px-[220px];
+  }
+
+  .heading {
+    @apply w-fit relative text-4xl leading-[44px] font-bold tracking-[-0.72px] z-1 md:text-[54px] md:leading-[70px] lg:text-[64px] 2xl:text-[72px];
+  }
+
+  .action {
+    @apply whitespace-nowrap w-fit inline-flex cursor-pointer items-center justify-center gap-2.5 rounded-lg bg-sky px-10 py-5 text-white transition-[color,background-color,border-color,scale] hover:bg-[#366fff] hover:scale-115 duration-70 ease-in focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current disabled:cursor-not-allowed disabled:bg-[#c4d4e8] disabled:text-navy;
+  }
+
+  .action-compact {
+    @apply rounded-md font-montserrat text-base leading-5 font-medium tracking-normal;
+  }
+
+  .sponsor-image{
+    @apply hover:scale-115 transition-[scale] duration-100 ease-in-out;
+  }
+
+  .footer-links {
+    @apply flex flex-col items-center md:items-start gap-5;
+  }
+
+  .footer-links h2 {
+    @apply leading-[22px] font-bold;
+  }
+}

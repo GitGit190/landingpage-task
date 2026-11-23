@@ -1,0 +1,46 @@
+.pricing-swiper {
+  --swiper-pagination-bullet-size: 1.5rem;
+  --swiper-pagination-bullet-horizontal-gap: 0px;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-inactive-color: transparent;
+  --swiper-pagination-color: transparent;
+}
+
+.pricing-swiper .swiper-wrapper {
+  padding-block: 1.5rem;
+}
+
+.pricing-swiper .swiper-slide {
+  display: flex;
+  width: min(86%, 28rem);
+  height: auto;
+}
+
+.pricing-swiper .swiper-pagination {
+  position: static;
+  line-height: 0;
+}
+
+.pricing-swiper .swiper-pagination-bullet {
+  position: relative;
+}
+
+.pricing-swiper .swiper-pagination-bullet::before {
+  position: absolute;
+  inset: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: auto;
+  border-radius: 50%;
+  background: var(--color-sky);
+  content: '';
+}
+
+.pricing-swiper .swiper-pagination-bullet-active::before {
+  background: var(--color-navy);
+}
+
+.pricing-swiper .swiper-pagination-bullet:focus-visible {
+  outline: 2px solid var(--color-sky);
+  outline-offset: -2px;
+}
