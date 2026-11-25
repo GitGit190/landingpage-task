@@ -27,7 +27,7 @@
     @apply space-y-6 items-center lg:items-start flex flex-col;
   }
   .text-and-image-container{
-    @apply flex flex-col items-center lg:flex-row gap-15 lg:items-center 2xl:gap-24;
+    @apply flex flex-col items-center lg:flex-row gap-15 lg:items-center lg:justify-center 2xl:gap-24;
   }
   .text-container {
     @apply flex flex-col items-center lg:items-start lg:text-start gap-15 z-1;

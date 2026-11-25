@@ -81,11 +81,11 @@ function App() {
         {/* HERO */}
         <section className="relative section-pad text-and-image-container bg-navy text-center text-white overflow-y-hidden">
 
-          <img src={images.heroPattern} alt='' className='absolute left-0 rotate-60 md:rotate-0 scale-420 md:scale-200 lg:scale-120 z-0' />
+          <img src={images.heroPattern} alt='' className='absolute left-0 rotate-60 md:rotate-0 scale-420 md:scale-200 lg:scale-120 2xl:w-full z-0' />
 
           {/* Texts */}
           <div className="flex flex-col gap-15 gap-15 z-1 md:pt-20 items-center lg:items-start ">
-            <div className="heading-to-subtext-spacing  text-center lg:text-start">
+            <div className="heading-to-subtext-spacing  text-center lg:text-start ">
               <h1 className="heading">Get More Done with whitepace</h1>
               <p>Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
             </div>
@@ -134,7 +134,7 @@ function App() {
         </section>
 
         {/* EXTENSION */}
-        <section className="section-pad text-and-image-container lg:items-center bg-navy text-center text-white">
+        <section className="section-pad text-and-image-container bg-navy text-white">
           <div  className='text-container'>
             <div className="heading-to-subtext-spacing relative">
               <h2 className="heading md:whitespace-nowrap">Use as Extension
@@ -144,7 +144,7 @@ function App() {
             </div>
             <ActionLink>Let’s Go</ActionLink>
           </div>
-          <img src={images.extension} loading='lazy' aria-hidden="true" className="mx-auto w-full max-w-[300px] md:max-w-[400px] lg:max-w-[450px] xl:max-w-[650px] -mb-15" data-artwork="extension" />
+          <img src={images.extension} loading='lazy' aria-hidden="true" className=" w-full max-w-[300px] md:max-w-[400px] lg:max-w-[450px] xl:max-w-[650px] -mb-15" data-artwork="extension" />
         </section>
 
         {/* CUSTOMISE */}
@@ -185,8 +185,8 @@ function App() {
         </section>
 
         {/* DATA */}
-        <section className="section-pad text-and-image-container lg:flex-row-reverse">
-          <img src={images.yourData} loading='lazy' aria-hidden="true"  className="mx-auto mb-5 lg:w-[calc(50%-25px)]"  data-artwork="data-security"/>
+        <section className="section-pad text-and-image-container lg:flex-row-reverse ">
+          <img src={images.yourData} loading='lazy' aria-hidden="true"  className=" mb-5 w-[90vw] lg:w-[calc(50%-25px)] max-w-[1450px]"  data-artwork="data-security"/>
           <div className='text-container'>
             <div className="heading-to-subtext-spacing">
               <h2 className="heading whitespace-nowrap">100% your data
